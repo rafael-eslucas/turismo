@@ -1,0 +1,227 @@
+/* ==========================================================================
+   ESTILOS GERAIS DA PÁGINA
+   ========================================================================== */
+
+/* Aplica regras de estilo base para todo o corpo do site */
+body {
+    font-family: Arial, sans-serif; /* Define a família de fontes primária e uma reserva padrão (sans-serif) */
+    margin: 0;                      /* Remove a margem padrão externa de 8px aplicada pelos navegadores */
+    padding: 0;                     /* Garante que não haja espaçamento interno padrão no body */
+    background-color: #f4f9fc;      /* Define um tom de azul bem suave/acinzentado para o fundo geral */
+    color: #333333;                 /* Define a cor padrão dos textos para um cinza escuro (melhor contraste que preto puro) */
+}
+
+
+/* ==========================================================================
+   TOPO / CABEÇALHO DA PÁGINA (.topo)
+   ========================================================================== */
+
+/* Container principal do topo/cabeçalho */
+.topo {
+    background-color: #005b96; /* Azul médio vibrante para destacar a marca */
+    color: #ffffff;            /* Texto na cor branca para dar alto contraste */
+    text-align: center;        /* Centraliza horizontalmente o título e o parágrafo */
+    padding: 30px 10px;        /* Espaçamento interno: 30px no topo/base e 10px nas laterais */
+}
+
+/* Título principal do topo (H1) */
+.topo h1 {
+    margin: 0;         /* Zera as margens padrão do H1 para evitar desalinhar o padding da .topo */
+    font-size: 32px;   /* Define o tamanho da fonte do título principal */
+}
+
+/* Subtítulo ou slogan do topo */
+.topo p {
+    margin-top: 10px;  /* Cria uma distância suave de 10px em relação ao título H1 acima */
+    font-size: 16px;   /* Tamanho de leitura confortável para o slogan */
+    color: #b3cde0;    /* Tom de azul-claro pastel para diferenciar o texto da mensagem do título principal */
+}
+
+
+/* ==========================================================================
+   MENU DE NAVEGAÇÃO (.menu)
+   ========================================================================== */
+
+/* Barra do menu de navegação */
+.menu {
+    background-color: #011f4b; /* Azul escuro/marinho para dar contraste com o topo */
+    text-align: center;        /* Centraliza os links dentro da barra do menu */
+    padding: 12px 0;           /* 12px de espaçamento interno em cima e embaixo, 0 nas laterais */
+}
+
+/* Links do menu de navegação */
+.menu a {
+    color: #ffffff;         /* Cor branca para os links */
+    text-decoration: none;  /* Remove o sublinhado padrão dos links HTML */
+    margin: 0 15px;         /* Espaçamento de 15px entre um link e outro nas laterais */
+    font-weight: bold;      /* Deixa a fonte em negrito para facilitar a leitura rápida */
+    font-size: 15px;        /* Tamanho levemente menor que o texto padrão */
+    font-weight: bolder;
+}
+
+/* Efeito HOVER nos links do menu (disparado ao passar o cursor do mouse) */
+.menu a:hover {
+    color: #6497b1;           /* Muda a cor do link para um tom de azul intermediário ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado apenas durante a interação do usuário */
+}
+
+
+/* ==========================================================================
+   ESTRUTURA E LAYOUT PRINCIPAL (.tabela-layout)
+   ========================================================================== */
+
+/* Tabela usada como container do conteúdo */
+.tabela-layout {
+    width: 90%;             /* Torna a tabela fluida, ocupando 90% da largura da tela */
+    max-width: 1000px;      /* Impede que a tabela se expanda demais em telas muito grandes */
+    margin: 30px auto;      /* 30px em cima/embaixo e 'auto' nas laterais (centraliza a tabela na tela) */
+    border-collapse: collapse; /* Remove o espaçamento padrão duplo entre as bordas das células */
+}
+
+/* Títulos de cada seção da página (H2) */
+.titulo-secao {
+    color: #005b96;                   /* Cor azul da identidade da marca */
+    border-bottom: 2px solid #005b96; /* Cria uma linha decorativa azul abaixo do título */
+    padding-bottom: 5px;              /* Afasta o texto da linha decorativa inferior */
+    margin-top: 30px;                 /* Espaço externo acima do título */
+    margin-bottom: 20px;              /* Espaço externo abaixo do título para afastar do conteúdo */
+}
+
+
+/* ==========================================================================
+   CARTÕES DOS PASSEIOS (.card-passeio)
+   ========================================================================== */
+
+/* Caixa individual de cada passeio */
+.card-passeio {
+    background-color: #ffffff; /* Fundo branco para destacar do fundo geral da página */
+    border: 1px solid #dcdcdc; /* Borda fina cinza claro para delimitar o cartão */
+    padding: 15px;             /* Espaçamento interno em todos os lados do cartão */
+    text-align: center;        /* Centraliza todo o texto e botão dentro do cartão */
+    margin: 10px;              /* Margem externa para não colar em outros cartões */
+}
+
+/* Imagens dentro do cartão de passeio */
+.card-passeio img {
+    width: 100%;           /* Faz a imagem ocupar toda a largura disponível no container pai */
+    height: 180px;         /* Fixa a altura de todas as imagens em 180px para padronizar o layout */
+    border-radius: 4px;    /* Arredonda levemente os cantos da imagem */
+    /* Nota: 'object-fit: cover;' poderia ser adicionado aqui para a imagem não distorcer */
+}
+
+/* Título de cada passeio (H3) */
+.card-passeio h3 {
+    color: #005b96;            /* Cor azul nos títulos dos passeios */
+    margin: 15px 0 10px 0;     /* Espaçamento: 15px no topo, 0 na direita, 10px na base, 0 na esquerda */
+}
+
+/* Descrição do passeio */
+.card-passeio p {
+    font-size: 14px; /* Tamanho levemente reduzido para o corpo de texto do cartão */
+    color: #555555;  /* Tom de cinza médio para criar hierarquia visual com os títulos */
+}
+
+/* Efeito HOVER nos cartões de passeio */
+.card-passeio:hover {
+    background-color: #e8f4f8; /* Troca o fundo para um azul muito claro ao passar o mouse */
+    border-color: #6497b1;     /* Destaca a borda mudando para um tom de azul */
+}
+
+
+/* ==========================================================================
+   BOTÃO DE AGENDAMENTO / RESERVA (.btn-reserva)
+   ========================================================================== */
+
+/* Estilo que transforma o link <a> em um botão visual */
+.btn-reserva {
+    background-color: #005b96; /* Fundo azul do botão */
+    color: #ffffff;            /* Cor do texto do botão */
+    padding: 8px 15px;         /* Espaçamento interno: 8px cima/baixo e 15px esquerda/direita */
+    text-decoration: none;     /* Remove o sublinhado do link */
+    border-radius: 4px;        /* Arredonda os cantos do botão */
+    margin-top: 10px;          /* Afasta o botão do elemento acima */
+    font-size: 14px;           /* Tamanho do texto */
+    display: inline-block;     /* (Boa prática recomendada) Permite respeitar margens e padding em elementos <a> */
+}
+
+/* Efeito HOVER no botão */
+.btn-reserva:hover {
+    background-color: #011f4b; /* Escurece o fundo do botão para azul marinho ao passar o mouse */
+}
+
+
+/* ==========================================================================
+   TABELA DE SERVIÇOS E TARIFAS (.tabela-servicos)
+   ========================================================================== */
+
+/* Estilo da tabela interna de serviços */
+.tabela-servicos {
+    width: 100%;               /* Faz a tabela ocupar 100% do espaço da célula onde está inserida */
+    background-color: #ffffff; /* Fundo branco */
+    margin-top: 15px;          /* Distância entre o parágrafo explicativo e a tabela */
+}
+
+/* Regras aplicadas tanto aos cabeçalhos (th) quanto às células comuns (td) da tabela */
+.tabela-servicos th, 
+.tabela-servicos td {
+    border: 1px solid #dddddd; /* Cria uma borda fina cinza em volta de todas as células */
+    padding: 12px;             /* Adiciona um bom espaçamento interno para os dados não ficarem espremidos */
+    text-align: left;          /* Alinha todo o conteúdo da tabela à esquerda */
+}
+
+/* Estilo exclusivo para os cabeçalhos da tabela */
+.tabela-servicos th {
+    background-color: #005b96; /* Fundo azul para a linha de cabeçalho */
+    color: #ffffff;            /* Texto em branco nos cabeçalhos */
+}
+
+/* Efeito HOVER nas linhas de dados da tabela de serviços */
+.tabela-servicos tr:hover {
+    background-color: #f1f1f1; /* Ilumina suavemente em cinza a linha onde o mouse estiver apontando */
+}
+
+/* ==========================================================================
+   RODAPÉ DA PÁGINA (.rodape)
+   ========================================================================== */
+
+/* Container do rodapé */
+.rodape {
+    background-color: #011f4b; /* Azul marinho mantendo o mesmo padrão da barra de menu */
+    color: #ffffff;            /* Cor do texto em branco */
+    text-align: center;        /* Centraliza os textos do rodapé */
+    padding: 20px 10px;        /* Espaçamento interno */
+    margin-top: 40px;          /* Cria uma margem generosa separando o conteúdo do rodapé */
+}
+
+/* Parágrafos dentro do rodapé */
+.rodape p {
+    margin: 5px 0;   /* Ajusta o espaçamento entre as linhas do rodapé para 5px */
+    font-size: 14px; /* Fonte ligeiramente reduzida para informações de rodapé */
+}
+
+/* Links do rodapé (caso existam) */
+.rodape a {
+    color: #b3cde0;        /* Cor azul claro pastel para os links */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Efeito HOVER nos links do rodapé */
+.rodape a:hover {
+    color: #ffffff;             /* Torna o link branco puro ao passar o mouse */
+    text-decoration: underline; /* Exibe o sublinhado para indicação visual */
+}
+
+
+
+
+
+
+
+
+
+/* video de barco */
+
+#video-barco, .tabela-servicos {
+    width: 90%;
+    max-width: 1000px;         /* <-- curioso*/
+}

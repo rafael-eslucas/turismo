@@ -1,0 +1,151 @@
+<!-- Define para o navegador que este documento é um arquivo HTML5 moderno -->
+<!DOCTYPE html>
+
+<!-- Tag raiz do documento. O atributo lang="pt-BR" define o idioma como Português do Brasil (bom para acessibilidade e SEO) -->
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação de caracteres como UTF-8, garantindo o suporte a acentos, cedilha e emojis -->
+    <meta charset="UTF-8">
+
+    <!-- Define o título que aparece na aba do navegador -->
+    <title>Cacau & Mar - Passeios Turísticos</title>
+
+    <!-- Importa a folha de estilos externa (CSS) responsável por estilizar esta página -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TOPO DA PÁGINA (Cabeçalho da marca) -->
+    <!-- Div usada para agrupar o título e a descrição principal do site -->
+    <div class="topo">
+        <!-- Título principal da página (H1 deve ser único por página para boas práticas de SEO) -->
+        <h1>Cacau & Mar Turismo</h1>
+        
+        <!-- Parágrafo com o slogan ou introdução breve da empresa -->
+        <p>A melhor experiência do litoral de Ilhéus em passeios de barco, lancha e centro histórico</p>
+    </div>
+
+    <!-- MENU DE NAVEGAÇÃO -->
+    <!-- Bloco contendo os links âncora para navegar pelas seções do site -->
+    <div class="menu">
+        <a href="index.html">Início</a>
+        <a href="passeios.html">Passeios</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contato</a>
+    </div>
+
+    <!-- TABELA PRINCIPAL DE LAYOUT -->
+    <!-- Tabela usada para estruturar o layout em colunas (uma abordagem clássica/antiga, usada quando não se usa Flexbox ou Grid) -->
+    <table class="tabela-layout">
+        
+        <!-- PRIMEIRA LINHA DA TABELA: Título da Seção -->
+        <tr>
+            <!-- colspan="3" faz com que esta célula ocupe o espaço equivalente a 3 colunas -->
+            <td colspan="3">
+               <h2 class="titulo-secao">Passeios</h2>
+            </td>
+        </tr>
+
+        <!-- SEGUNDA LINHA DA TABELA: Onde ficam os cards dos passeios (em 3 colunas) -->
+        <tr>
+            
+            <!-- COLUNA 1: Passeio do Centro Histórico (Ocupa 33% da largura da tabela) -->
+            <td width="33%">
+                <div class="card-passeio">
+                    <!-- Imagem representativa do passeio -->
+                    <img src="centro.png" alt="Centro Histórico">
+                    <h3>Centro Histórico</h3>
+                    <p>Caminhada guiada pelas ruas de pedra, casarões coloniais, igrejas e museus marcantes da nossa história local.</p>
+                    <p><strong>Duração:</strong> 2h30min</p>
+                    <!-- Botão de ação/link direcionando para a seção de contato -->
+                    <a href="#contato" class="btn-reserva">Saber Mais</a>
+                </div>
+            </td>
+
+            <!-- COLUNA 2: Passeio de Barco (Ocupa 33% da largura) -->
+            <td width="33%">
+                <div class="card-passeio">
+                    <img src="barco.png" alt="Passeio de Barco">
+                    <h3>Passeio de Barco</h3>
+                    <p>Navegação calma pela baía com paradas para mergulho, música a bordo e paisagens deslumbrantes da costa.</p>
+                    <p><strong>Duração:</strong> 4 horas</p>
+                    <a href="#contato" class="btn-reserva">Saber Mais</a>
+                </div>
+            </td>
+
+            <!-- COLUNA 3: Passeio de Lancha (Ocupa 33% da largura) -->
+            <td width="33%">
+                <div class="card-passeio">
+                    <img src="lancha.png" alt="Passeio de Lancha">
+                    <h3>Passeio de Lancha VIP</h3>
+                    <p>Roteiro privativo para praias ilhadas exclusivas e piscinas naturais com velocidade, conforto e privacidade.</p>
+                    <p><strong>Duração:</strong> Personalizado</p>
+                    <a href="#contato" class="btn-reserva">Saber Mais</a>
+                </div>
+            </td>
+
+        </tr>
+
+        <!-- TERCEIRA LINHA DA TABELA: Seção de Serviços e Tabela Interna -->
+        <tr>
+            <!-- Ocupa toda a largura da tabela pai (3 colunas de largura) -->
+            <td colspan="3">
+                <h2 class="titulo-secao">Serviços Oferecidos & Tarifas</h2>
+                <p>Confira abaixo nossos serviços detalhados e agende seu horário com antecedência:</p>
+            </td>
+        </tr>
+
+        <tr>
+            <table class="tabela-servicos">
+                <tr>
+                    <th>Serviço</th>
+                    <th>Incluso</th>
+                    <th>Frequência</th>
+                    <th>Preço Médio</th>
+                </tr>
+                <tr>
+                    <td>Tour Centro Histórico</td>
+                    <td>Guia credenciado + Degustação local</td>
+                    <td>Diariamente (9h e 15h)</td>
+                    <td>R$ 60,00 / pessoa</td>
+                </tr>
+
+                <tr>
+                    <td>Barco Compartilhado</td>
+                    <td>Frutas a bordo, coletes e máscara de mergulho</td>
+                    <td>Terça a Domingo (10h)</td>
+                    <td>R$ 120,00 / pessoa</td>
+                </tr>
+
+                <tr>
+                    <td>Lancha Privativa</td>
+                    <td>Marinheiro, combustível, cooler com gelo</td>
+                    <td>Sob agendamento</td>
+                    <td>R$ 800,00 / grupo</td>
+                </tr>
+            </table>
+        </tr>
+
+        <section class="conteudo" id="video-barco">
+            <h2 class="titulo-secao">Demonstrações de passeio de barco</h2>
+            <iframe src="https://www.youtube.com/watch?v=-mWFPg1XgTQ%22" frameborder="0"></iframe>
+            <iframe src="https://www.youtube.com/watch?v=FxhbAGwEYGQ" frameborder="0"></iframe>
+        </section>
+    </table> <!-- Fim da tabela principal de layout -->
+    </section>
+
+    
+    <!-- RODAPÉ DA PÁGINA -->
+    <!-- Área final com informações institucionais e de contato da empresa -->
+    <div class="rodape">
+        <p><strong>Cacau & Mar Turismo Ltda.</strong></p>
+        <p>Av. Soares Lopes, 1000 - Centro, Ilhéus - Ba - CEP: 00000-000</p>
+        <p>Contato: (00) 99999-8888 </p>
+        <!-- &copy; é a entidade HTML que renderiza o símbolo de Copyright (©) -->
+        <p>&copy; 2026 Todos os direitos reservados.</p>
+    </div>
+
+</body>
+</html>
